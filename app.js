@@ -1,2 +1,4 @@
-var aaa = '22'
-window.alert(aaa);
+var sayHello = function () {
+    console.log('Hello')
+};
+sayHello();
