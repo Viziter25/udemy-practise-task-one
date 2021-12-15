@@ -1,4 +1,30 @@
-var sayHello = function () {
-    console.log('Hello')
+'use strick';
+
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
-sayHello();
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+
+// const personalMovieDB = ['count', 'movies', 'actors', 'genres', 'privat'];
+
+// personalMovieDB[0] = numberOfFilms;
+// personalMovieDB[1] = {};
+// personalMovieDB[2] = {};
+// personalMovieDB[3] = [];
+// personalMovieDB[4] = false;
